@@ -1,0 +1,30 @@
+# azd
+.azure/
+
+# Bicep build output
+infra/*.json
+!infra/*.parameters*.example.json
+
+# Real parameter files — never commit
+infra/main.parameters.json
+infra/main.parameters.*.json
+!infra/main.parameters.*.example.json
+
+# Secrets and local env
+*.env
+.env
+.env.*
+!.env.example
+*.pfx
+*.pem
+*.key
+
+# Tooling
+.vscode/settings.json
+*.log
+whatif.txt
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
